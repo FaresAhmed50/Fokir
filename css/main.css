@@ -1,0 +1,125 @@
+* ,*::after ,*::before{
+
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+
+    --main-color : #ff305b;
+    --font-family : 'Source Sans Pro', sans-serif;
+}
+
+
+/* *Staart the header section */
+
+.header{
+
+    position:absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+
+.header .nav{
+
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    > a{
+        display: block;
+        font-family: var(--font-family);
+        font-size: 800;
+        font-size: 24px;
+        color: var(--main-color);
+    }
+
+
+    i{
+        color: #ffff;
+    }
+
+
+}
+
+
+.header .nav .nav-element ul{
+
+    display: flex;
+    align-items: center ;
+
+    li{
+
+        a{
+            display: block;
+            font-size: 16px;
+            font-weight: 300;
+            margin-left: 20px;
+            font-family: var(--font-family);
+            color: #ffff;
+        }
+    }
+}
+
+.header .nav .nav-element ul .Active{
+    color: var(--main-color);
+}
+
+.header .nav .nav-element ul li a:hover {
+
+    color: var(--main-color); 
+}
+
+.landing{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) ,   url("../img/home.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.landing .container{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+
+    h1{
+        font-size: 70px;
+        font-family: var(--font-family);
+        color: var(--main-color);
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+
+    h3{
+        font-weight: 800;
+        font-family: var(--font-family);
+        color: #ffff;
+        padding-bottom: 0.5rem;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 300;
+        font-family: var(--font-family);
+        color: #ffff;
+        padding-bottom: 0.5rem;
+    }
+}

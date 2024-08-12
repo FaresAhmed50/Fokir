@@ -21,6 +21,10 @@ a{
     --font-family : 'Source Sans Pro', sans-serif;
 }
 
+.clear-fix{
+    clear: both;
+}
+
 
 /* *Staart the header section */
 
@@ -122,4 +126,183 @@ a{
         color: #ffff;
         padding-bottom: 0.5rem;
     }
+}
+
+
+/* * End the header section */
+
+/* * Start the About section */
+
+.about .container{
+
+    margin: auto ;
+    width: 70%;
+    margin-top: 90px;
+}
+
+.about .container .about-img{
+
+    width: 35%;
+    float: left;
+    margin-bottom: 90px;
+    margin-right: 100px;
+    position: relative;
+    border: 5px solid #555555 ;
+    border-radius: 8px;
+
+    img{
+        width: 100%;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        border-radius: 8px;
+    }
+}
+
+
+.about .container .about-img .overlay{
+
+
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    border-radius: 8px;
+    left: 20px;
+    right: -20px;
+    bottom: -16px;
+    top: calc(100% + 20px);
+    transition: ease-in-out .4s all;
+
+
+    ul{
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+
+        li{
+            display: inline-block;
+            padding: 0.5rem;
+        }
+
+
+        li:hover{
+
+            a{
+                color: var(--main-color);
+            }
+        }
+
+        
+    }
+}
+
+.about .container .about-img:hover .overlay{
+
+    top: 20px;
+}
+
+
+.about .container .about-containt{
+
+    /* background-color: red; */
+    width: 50%;
+    float: left;
+
+    h2{
+        margin-bottom: 20px;
+        margin-left: 10px;
+        font-size: 34px;
+        font-weight: 600;
+        font-family: var(--font-family);
+        position: relative;
+    }
+
+
+    p{
+        line-height: 25px;
+        font-size: 18px;
+        color: #999999;
+        padding-bottom: 20px;
+        border-bottom: 1px dotted #999999;
+    }
+}
+
+
+
+.about .container .about-containt h2::before{
+
+    position: absolute;
+    content: "";
+    background-color: var(--main-color);
+    width: 5px;
+    height: 25px;
+    top: 7px;
+    left: -10px;
+}
+
+
+.about .about-containt .about-info{
+
+    ul{
+        padding-top: 30px;
+        li{
+            padding-bottom: 1rem;
+            float:left;
+            width: 40%;
+            margin-top: 10px;
+            font-size: 16px;
+            padding-right: 20px;
+            font-family: var(--font-family);
+            color: #555555;
+
+
+            span{
+                font-family: var(--font-family);
+                font-weight: 700;
+                color: black;
+                font-size: 16px;
+            }
+
+
+
+            a{
+                color:#555555;
+            }
+        }
+    }
+}
+
+.about .about-containt .about-info .special{
+
+    width: 50%;
+}
+
+.about .about-containt .about-info button{
+
+    border: 0;
+    border-radius: 5px;
+    padding:  10px 25px;
+    margin-right: 10px;
+    background-color: var(--main-color);
+    transition: ease 0.3s all;
+
+
+    a{
+        color: #ffff;
+        font-size: 18px;
+        font-family: var(--font-family);
+    }
+
+
+    i{
+        color: #ffff;
+    }
+}
+
+
+.about .about-containt .about-info button:hover{
+
+    background-color: #EC2403;
 }

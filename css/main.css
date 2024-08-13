@@ -26,6 +26,61 @@ a{
 }
 
 
+
+.sec-header{
+
+    text-align: center;
+    /* margin-top: 90px; */
+    margin-bottom: 20px;
+
+    h2{
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+.sec-header .icon{
+
+    position: relative;
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    left: calc(50% - 70px);
+}
+
+.sec-header .icon span{
+
+    height: 1px;
+    background-color: #ff305b;
+    margin-bottom: 3px;
+}
+
+
+.sec-header .icon span:first-child{
+
+    width: 40%;
+}
+
+
+.sec-header .icon span:nth-child(2){
+
+    width: 100%;
+}
+
+
+.sec-header .icon span:last-child{
+
+    width: 40%;
+}
+
+
+
+
 /* *Staart the header section */
 
 .header{
@@ -305,4 +360,93 @@ a{
 .about .about-containt .about-info button:hover{
 
     background-color: #EC2403;
+}
+
+
+/* * End the About section */
+
+/* * Start the Services section */
+
+
+.Services{
+    background-color: #f1f1f1;
+    padding: 100px 0 40px 0 ;
+
+}
+
+.Services .container{
+
+    width: 80%;
+    margin: auto;
+}
+
+
+.Services .container .Services-containt{
+
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+
+
+.Services .container .Services-containt .containt{
+
+    width: 25%;
+    margin-top: 20px;
+    padding: 35px 10px;
+    transition: ease-in-out 0.4s all;
+
+
+    i{
+        padding: 10px;
+        transition: 0.3s ease-in-out;
+        color: var(--main-color);
+    }
+
+
+    h3{
+        padding: 10px;
+        font-size: 18px;
+        font-family: var(--font-family);
+        font-weight: 600;
+    }
+
+
+    P{
+        padding-bottom: 30px;
+        font-size: 16px;
+        font-family: var(--font-family);
+        color: #555555;
+        font-weight: 500;
+    }
+}
+
+
+
+.Services .container .Services-containt .containt:hover{
+
+    background-color: #ffff;
+    box-shadow: gray 5px 5px 20px 0px;
+    i{
+        transform: scale(1.5);
+    }
+}
+
+
+/* * End the Services section */
+
+/* * Start Portfolio section */
+
+.Portfolio{
+
+    padding: 100px 0 40px;
+}
+
+.Portfolio .container{
+
+    width: 70%;
+    margin: auto;
 }

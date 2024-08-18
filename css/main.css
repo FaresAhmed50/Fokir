@@ -33,10 +33,12 @@ a{
     margin-bottom: 20px;
 
     h2{
+        font-family: var(--font-family);
         font-size: 40px;
-        font-weight: 800;
+        font-weight: 700;
         line-height: 30px;
         padding-bottom: 10px;
+        color: #333;
     }
 }
 
@@ -501,9 +503,10 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     position: absolute;
+    overflow: hidden;
     height: 100%;
     width: 100%;
-    top: 0;
+    top: -3px;
     transition: ease 0.3s all;
 
 
@@ -526,3 +529,168 @@ a{
 /* * END Portfolio section */
 
 /* * Start rating section */
+
+
+.rating{
+
+    background-color: #f1f1f1;
+    padding:    100px 0 100px;
+}
+
+.rating .container{
+
+    width: 70%;
+    margin: auto;
+}
+
+.rating .container .wrap-item{
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.rating .container .cards {
+
+    width: 25%;
+
+
+    i{
+        margin-bottom: 30px;
+        color: var(--main-color);
+    }
+
+
+    h4{
+        margin-bottom: 10px ;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    p{
+        font-family: var(--font-family);
+        color: #999999;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+/* * End rating section */
+
+/* * Staart feedback section */
+
+.feedback{
+
+    padding:    100px 0 100px;
+
+}
+
+.feedback .container .feedback-card{
+
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 50%;
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.feedback .container .feedback-card::after{
+
+    content: "";
+    position: absolute;
+    border-top: #ff305b;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-style:solid;
+    border-width: 150px;
+    top: 0;
+    left: -150px;
+    z-index: 1;
+}
+
+
+
+.feedback .container .feedback-card .feedback-containt{
+
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.feedback .container .wrap-item{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.feedback .container .feedback-card .client-img{
+
+
+    width: 80%;
+    padding: 20px 20px;
+    z-index: 2;
+
+    img{
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+
+.feedback .container .feedback-card{
+
+    h4{
+        font-family: var(--font-family);
+        font-size: 18px;
+        font-weight: 600;
+        padding: 15px 5px;
+    }
+
+    p{
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 300;
+        color: #555555;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+.feedback .container .feedback-card .client-rating{
+
+    i{
+        color: #f1c30d;
+        margin-bottom: 15px;
+    }
+}
+
+
+.feedback .container .wrap-item .scroll{
+
+    width: 35px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: var(--main-color);
+    position: relative;
+}
+
+
+.feedback .container .wrap-item .scroll::after{
+
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    border: solid 1px var(--main-color);
+    width: 10px;
+    height: 10px;
+    right: -20px;
+}

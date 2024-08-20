@@ -477,14 +477,16 @@ a{
 
     width: 32%;
     position: relative;
-    transition: ease 0.3s all;
 
 
     img{
-
         width: 100%;
-    transition: ease 0.3s all;
+        transition: ease-in-out 0.4s;
+    }
 
+
+    a{
+        display: block;
     }
 }
 
@@ -579,7 +581,7 @@ a{
 
 /* * End rating section */
 
-/* * Staart feedback section */
+/* * Start feedback section */
 
 .feedback{
 
@@ -694,3 +696,217 @@ a{
     height: 10px;
     right: -20px;
 }
+
+/* * End feedback section */
+
+/* * start blog section */
+
+.Blog{
+
+    background-color: #f1f1f1;
+    padding:    100px 0 100px;
+}
+
+
+.Blog .container {
+
+    width: 70%;
+    margin: auto;
+
+}
+
+.Blog .container .wrap-items {
+
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.Blog .container .wrap-items .cards .card-img{
+
+    width: 100%;
+    padding-bottom: 5px;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+.Blog .container .wrap-items .cards .card-cont{
+
+    padding: 15px 15px;
+}
+
+
+.Blog .container .wrap-items .cards{
+
+
+    width: 33.3333%;
+    background-color: #ffff;
+
+    p{
+        color: #999999;
+        font-family: var(--font-family);
+        font-size: 600;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+
+    h4{
+        font-weight: 600;
+        font-family: var(--font-family);
+        margin-bottom: 15px;
+
+        a{
+            color: #333;
+            transition: ease-in-out all 0.4s;
+            font-size: 20px;
+            font-family: var(--font-family);
+        }
+    }
+
+    a{
+        color: #999999;
+        font-family: var(--font-family);
+        font-size: 600;
+        font-size: 16px;
+        margin-bottom: 20px;
+        transition: ease-in-out all 0.4s;
+    }
+
+}
+
+.Blog .container .wrap-items .cards a:hover{
+    color: var(--main-color);
+}
+
+
+/* *End of blog section  */
+
+/* * Start of contact us section  */
+
+
+
+.contact-us{
+
+    padding:    100px 0 100px;
+}
+.contact-us .container{
+
+    width: 70%;
+    margin: auto;
+}
+
+.contact-us .container .client-info{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+
+    input{
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: 1px solid #999999;
+        font-size: 16px;
+        font-family: var(--font-family);
+    }
+
+    textarea{
+
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: 1px solid #999999;
+        font-size: 16px;
+        font-family: var(--font-family);
+    }
+
+    button{
+        
+        border: 0;
+        border-radius: 5px;
+        padding:  10px 25px;
+        margin-right: 10px;
+        background-color: var(--main-color);
+        transition: ease 0.3s all;
+
+        a{
+            color: #ffff;
+            font-size: 16px;
+            font-family: var(--font-family);
+        }
+    
+    }
+}
+
+.contact-us .container .client-info button:hover{
+
+    background-color: #EC2403;
+}
+
+
+.contact-us .container .client-info #name {
+
+    width: 46%;
+}
+
+
+.contact-us .container .client-info #email {
+
+    width: 48%;
+}
+
+
+.contact-us .container .client-info #subject {
+
+    width: 100%;
+}
+
+
+.contact-us .container .client-info #Massage {
+
+    width: 100%;
+}
+
+/* * End of contact us section */
+
+.footer{
+    background-color: #333;
+    padding: 50px 0 50px;
+}
+
+
+.footer .container{
+
+    width: 70%;
+    margin: auto;
+}
+
+.footer .container .footer-contact ul{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+    li{
+        a{
+            i{
+                color: #ffff;
+                transition: ease-in-out 0.3s;
+            }
+        }
+    }
+}
+
+
+.footer .container .footer-contact ul li:hover{
+
+    i{
+        color: var(--main-color);
+    }
+}
+
+/* *End of the footer */

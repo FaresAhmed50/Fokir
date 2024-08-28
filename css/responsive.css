@@ -9,6 +9,44 @@
     width: 80%;
 }
     
+
+
+.Portfolio .container{
+
+    width: 90%;
+
+}
+
+
+.contact-us .container .client-info #name {
+
+    width: 42%;
+}
+
+
+.contact-us .container .client-info #email {
+
+    width: 48%;
+}
+
+
+}
+
+
+@media screen and (max-width : 1244px) {
+    
+    .Portfolio .container{
+
+        width: 95%;
+    }
+
+
+
+
+
+
+
+
 }
 
 @media (max-width : 1010px) {
@@ -23,7 +61,19 @@
 
         border: 0;
     }
+
+    .Portfolio .container{
+
+        width: 90%;
     
+    }    
+
+    .Blog .container {
+
+        width: 90%;
+    }
+
+
     }
 
 @media (max-width : 990px) {
@@ -37,9 +87,49 @@
     .Services .container .Services-containt .containt{
 
         width: 47%;
-        /* flex-wrap: wrap; */
+    }
+
+
+    .Portfolio .container .portfolio-containt .portfolio-img .img{
+
+        width: 48%;
     }
     
+
+    .rating .container .cards{
+        width: 50%;
+
+
+        p{
+            margin-bottom: 25px;
+        }
+    }
+
+
+    .feedback .container .feedback-card{
+
+        width: 70%;
+    }
+
+    .Blog .container {
+
+        width: 90%;
+    }
+
+    .Blog .container .wrap-items{
+
+        justify-content: center;
+    }
+
+    .Blog .container .wrap-items .cards{
+
+        width: 25%;
+    }
+
+
+    
+
+
 }
 
 @media (max-width : 921px ) {
@@ -109,15 +199,69 @@
     width: 100%;
 }    
 
+.Portfolio .container .portfolio-containt .portfolio-img .img{
+
+    width: 100%;
+}
+
+
+.rating .container .cards{
+    width: 100%;
+
+
+    p{
+        margin-bottom: 25px;
+    }
+}
 
 
 
+.feedback .container .feedback-card{
+
+    width: 50%;
+    padding: 20px 20px;
+}
+
+.feedback .container .feedback-card .feedback-containt{
+
+    flex-direction: column;
+}
+
+.feedback .container .feedback-card .client-img{
+    width: 40%;
+    align-self: center;
+}
+
+.Blog .container .wrap-items .cards{
+
+    width: 100%;
+}
+
+.contact-us .container .client-info #name {
+
+    width: 100%;
+}
+
+
+.contact-us .container .client-info #email {
+
+    width: 100%;
+}
 
 }
 
 
 
 @media (max-width : 640px) {
+
+
+
+
+.about .container{
+
+    width: 90%;
+}
+
 
 
     .header .nav{
@@ -175,15 +319,9 @@
     }
 
 
-    .about .container{
-    
-        width: 70%;
-    }
-
-    
 .about .container .about-img{
 
-    width: 80%;
+    width: 95%;
     border: 0;
 }
 
@@ -198,6 +336,12 @@
     width: 100%;
 }
 
+
+.about .about-containt .about-info ul button {
+
+    width: 40%;
+}
+
 .about .about-containt .about-info .special {
 
     width: 100%;
@@ -209,3 +353,4 @@
 
 
 }
+

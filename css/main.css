@@ -13,6 +13,7 @@ ul{
 
 a{
     text-decoration: none;
+    color: #ffff;
 }
 
 :root{
@@ -338,7 +339,7 @@ a{
 
     border: 0;
     border-radius: 5px;
-    padding:  10px 25px;
+    padding:  10px 10px;
     margin-right: 10px;
     background-color: var(--main-color);
     transition: ease 0.3s all;
@@ -455,6 +456,7 @@ a{
 
     margin: 30px 0px 30px 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 
@@ -466,12 +468,21 @@ a{
     }
 }
 
+.Portfolio .container .portfolio-cat a{
 
-.Portfolio .container .portfolio-cat  .Active{
+    color: black;
+    display: block;
+}
+
+.Portfolio .container .portfolio-cat  .Active a{
 
     color: var(--main-color);
 }
 
+.Portfolio .container .portfolio-cat a:hover {
+
+    color: var(--main-color);
+}
 
 .Portfolio .container .portfolio-containt .portfolio-img .img{
 
@@ -496,8 +507,6 @@ a{
     flex-wrap: wrap;
     gap: 20px;
     transition: ease 0.3s all;
-
-
 }
 
 .Portfolio .container .portfolio-containt .portfolio-img .img .img-overlay{
@@ -589,6 +598,14 @@ a{
 
 }
 
+.feedback .container{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
 .feedback .container .feedback-card{
 
     background-color: #f1f1f1;
@@ -629,13 +646,15 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 }
 
 
 .feedback .container .feedback-card .client-img{
 
 
-    width: 80%;
+    width: 40%;
     padding: 20px 20px;
     z-index: 2;
 
@@ -718,19 +737,12 @@ a{
 .Blog .container .wrap-items {
 
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
-    gap: 30px;
+    gap: 20px;
 }
 
-.Blog .container .wrap-items .cards .card-img{
 
-    width: 100%;
-    padding-bottom: 5px;
-
-    img{
-        width: 100%;
-    }
-}
 
 
 .Blog .container .wrap-items .cards .card-cont{
@@ -742,7 +754,7 @@ a{
 .Blog .container .wrap-items .cards{
 
 
-    width: 33.3333%;
+    width: 31%;
     background-color: #ffff;
 
     p{
@@ -776,6 +788,16 @@ a{
         transition: ease-in-out all 0.4s;
     }
 
+}
+
+.Blog .container .wrap-items .cards .card-img{
+
+    width: 100%;
+    padding-bottom: 5px;
+
+    img{
+        width: 100%;
+    }
 }
 
 .Blog .container .wrap-items .cards a:hover{

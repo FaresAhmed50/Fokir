@@ -831,9 +831,11 @@ a{
     input{
         padding: 10px 10px;
         border-radius: 5px;
+        outline: none;
         border: 1px solid #999999;
         font-size: 16px;
         font-family: var(--font-family);
+        transition: ease-in-out all 0.5s;
     }
 
     textarea{
@@ -842,6 +844,7 @@ a{
         border-radius: 5px;
         border: 1px solid #999999;
         font-size: 16px;
+        outline: none;
         font-family: var(--font-family);
     }
 
@@ -866,6 +869,16 @@ a{
 .contact-us .container .client-info button:hover{
 
     background-color: #EC2403;
+}
+
+.contact-us .container .client-info input:focus{
+
+    border-color: var(--main-color);
+}
+
+.contact-us .container .client-info textarea:focus{
+
+    border-color: var(--main-color);
 }
 
 
